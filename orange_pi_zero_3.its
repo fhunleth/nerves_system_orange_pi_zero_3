@@ -1,0 +1,43 @@
+/dts-v1/;
+
+/ {
+    description = "Orange Pi Zero 3";
+    #address-cells = <1>;
+
+    images {
+        kernel-1 {
+            data = /incbin/("Image.gz");
+            type = "kernel";
+            arch = "arm64";
+            os = "linux";
+            compression = "gzip";
+            load = <0x40000000>;
+            entry = <0x40000000>;
+
+            hash-1 {
+                algo = "sha1";
+            };
+         };
+
+        fdt-1 {
+            description = "sun50i-h618-orangepi-zero3.dtb";
+            data = /incbin/("sun50i-h618-orangepi-zero3.dtb");
+            type = "flat_dt";
+            arch = "arm64";
+            compression = "none";
+
+            hash-1 {
+                algo = "sha1";
+            };
+        };
+    };
+
+    configurations {
+        default = "conf-1";
+        conf-1 {
+            kernel = "kernel-1";
+            fdt = "fdt-1";
+        };
+    };
+};
+

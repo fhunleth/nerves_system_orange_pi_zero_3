@@ -1,0 +1,12 @@
+--- a/Makefile.a	2022-06-01 08:02:46.000000000 -0700
++++ b/Makefile	2023-01-03 14:59:53.502859260 -0800
+@@ -619,6 +619,9 @@
+ 	BL32_LDFLAGS	+=	$(PIE_LDFLAGS)
+ endif
+ 
++BL31_LDFLAGS += --no-warn-rwx-segment
++BL32_LDFLAGS += --no-warn-rwx-segment
++
+ ifeq (${ARCH},aarch64)
+ BL1_CPPFLAGS += -DIMAGE_AT_EL3
+ ifeq ($(BL2_AT_EL3),1)
