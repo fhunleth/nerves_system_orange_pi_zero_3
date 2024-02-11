@@ -10,7 +10,7 @@ This is the base Nerves System configuration for the [Orange Pi Zero 3](http://w
 | CPU                  | ARM Cortex-A53 1.5 GHz           |
 | Memory               | 1 GB, 1.5 GB, 2 GB, or 4 GB DRAM |
 | Storage              | MicroSD card (SPI Flash unused)  |
-| Linux kernel         | 6.1                              |
+| Linux kernel         | 6.6                              |
 | IEx terminal         | ttyS0 via GPIO header            |
 | UART                 |                                  |
 | USB                  | Yes                              |
