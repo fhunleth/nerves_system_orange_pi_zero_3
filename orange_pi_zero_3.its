@@ -20,8 +20,8 @@
          };
 
         fdt-1 {
-            description = "sun50i-h618-orangepi-zero3.dtb";
-            data = /incbin/("sun50i-h618-orangepi-zero3.dtb");
+            description = "sun50i-h616-orangepi-zero3.dtb";
+            data = /incbin/("sun50i-h616-orangepi-zero3.dtb");
             type = "flat_dt";
             arch = "arm64";
             compression = "none";
