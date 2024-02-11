@@ -1,7 +1,7 @@
 /dts-v1/;
 
 / {
-    description = "Orange Pi Zero 3";
+    description = "OrangePi Zero 3";
     #address-cells = <1>;
 
     images {
@@ -12,7 +12,7 @@
             os = "linux";
             compression = "gzip";
             load = <0x40000000>;
-            entry = <0x40000000>;
+            entry = <0x40080000>;
 
             hash-1 {
                 algo = "sha1";
